@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio HTML</title>
-</head>
-<body>
-    <form>
-        <h2>Formulário de cadastro</h2>
-        <div>
-            <label for="nome">Nome</label>
-            <input type="text" name="Digite seu nome" placeholder="Digite seu nome" id="nome">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Integrando HTML com JavaScript</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form">
+        <h2 class="title-form">Integrando HTML com JavaScript</h2>
+        <div class="container-input">
+          <label for="campoA">Número A:</label>
+          <input type="number" name="número A" id="campoA" />
         </div>
-        <div>
-            <label for="email">E-mail</label>
-            <input type="email" name="Digite seu email" placeholder="Digite seu email" id="email">
+        <div class="container-input">
+          <label for="campoB">Número B:</label>
+          <input type="number" name="número B" id="campoB" />
         </div>
-        <div>
-            <label for="senha">Senha</label>
-            <input type="password" name="Digite sua senha" placeholder="Digite sua senha" id="senha">
-        </div>
-        <button type="submit">Cadastrar</button>
-    </form>
-</body>
+        <p class="message">Mensagem</p>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
