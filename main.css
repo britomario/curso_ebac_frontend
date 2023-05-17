@@ -2,61 +2,76 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
 }
 
-body{
-    background-color: #d1d1d1;
+main{
+    background-color: #ccc;
 }
 
-.container{
+
+main .container{
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
+    max-width: 768px;
+    margin: 0 auto;
 }
 
-h1{
-    font-size: 42px;
-    margin-bottom: 1rem;
+form{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 0 20%;
+}
+
+form div, form label,
+form h2{
+    margin-bottom: 8px;
+}
+
+form label, form input{
+    display: block;
+    width: 100%;
+}
+
+form label{
+    font-weight: bold;
 }
 
 form input{
-    width: 248px;
-    height: 40px;
-    padding: .5rem;
-    border-radius: 8px;
-    border: none;
-}
-
-form input::placeholder{
-    font-size: 18px;
+    height: 30px;
+    padding: 8px;
 }
 
 form button{
-    height: 40px;
-    width: 100px;
-    font-weight: bold;
-    font-size: 1rem;
-    background-color: #2C7A00;
+    width: 160px;
+    height: 38px;
+    background-color: red;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     color: #fff;
-}
-
-ul li{
     cursor: pointer;
+    font-weight: bold;
 }
 
-.to-do-list{
-    margin-top: .5rem;
-    font-size: 18px;
-    font-weight: normal;
-    font-family: sans-serif;
+label.error{
+    color: red;
+    padding: 6px 0;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+}
+.container-radio{
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.container-radio input[type="radio"]{
+    height: 16px;
 }
 
-.checked{
-    text-decoration: line-through;
-    text-decoration-color: rgba(0, 0, 0, .6);
+.d-none{
+    display: none;
 }
